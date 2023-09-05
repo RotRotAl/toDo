@@ -1,5 +1,6 @@
-import express from "express";
-import bodyParser from "body-parser";
+
+const bodyParser=require("body-parser");
+const express=require("express");
 
 const date = new Date();
 const app = express();
