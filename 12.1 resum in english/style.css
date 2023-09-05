@@ -1,0 +1,60 @@
+.gradient-background {
+    background: linear-gradient(300deg, #185c73, #176B87, #001d26);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+html{
+    font-size: 2.5vh;
+}
+
+body{
+    background-color: #DAFFFB;
+    
+}
+
+
+h1{
+    font-family: 'Caprasimo', cursive;
+    text-align: center;
+    color:#001C30;
+}
+p,ul,h2,h3,h4,h5,button{
+    font-family: 'Inconsolata', monospace;
+    text-align: center;
+    color:#001C30;
+}
+ul{
+    list-style: circle;
+}
+.highlight{
+    color: #64CCC5;
+}
+#profile-pic{
+    border-radius: 100%;
+    
+}
+#contact-me{
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    color: #64CCC5;
+    background-color: #176B87;
+}
+#contact-me:hover{
+    color: #176B87;
+    background-color: #64CCC5;
+}
+footer{
+    height: 10vh;
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>RotemMovie</title>
+  <link rel="icon" type="image/x-icon" href="./assets/mini-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-size: 2vh;
+      font-family: 'Sono', sans-serif;
+    }
+    ul{
+      list-style: none;
+    }
+    .site-container{
+      height: 100vh;
+    }
+    .pricing-container{
+      
+      position: absolute;
+      top: 10vh;
+      left: 16vw;
+      display: flex;
+      flex-direction: row;
+      gap: 50px;
+      justify-content: center;
+      align-items: center;
+      height: 40vh;
+      height: 50vw;
+    }
+    .pricing-container>*{
+      min-width: 300px;
+      text-align: center;
+    }
+    .pricing-container>div{
+      border-radius: 10%;
+    }
+    .plan-button{
+      font-size: 1.1rem;
+      background-color: rgb(255, 0, 0);
+      margin: 5px;
+      border: 0px;
+      color: white;
+      border-radius: 10%;
+    }
+    .plan-button:hover{
+      background-color: rgb(115, 47, 47);
+    }
+    .plan-title{
+      font-size: 1.1rem;
+    }
+    .pricing-plan{
+      background-color: lightgrey;
+    }
+    .pricing-plan:hover{
+      background-color: lightcoral;
+    }
+    .sign-in{
+      position: absolute;
+      left: 90vw;
+      font-size: 1.2rem;
+      top:8vh;
+    }
+    hr{
+      border: 0.75px solid red;
+    }
+    .plan-price{
+      font-size: 2rem;
+    }
+    header>img{
+     
+      height: 15vh;
+    }
+    footer{
+      width: 100vw;
+      position: absolute;
+      top: 90vh;
+      left: 3vw;
+
+    }
+    #hr-footer{
+      position: absolute;
+      top: 91vh;
+      width: 100%;
+    }
+    footer>p{
+      text-align: center;
+   
+    }
+    
+    /* Hint: What can you do with a media query and flexbox? */
+    @media (max-width: 1250px) {
+      body {
+      font-size: 2.2vh; font-family: 'Sono', sans-serif;
+    }
+      .plan-button{
+      font-size: 1.4rem;
+      
+    }
+      .sign-in{
+      font-size: 1.44rem !important;
+      left: 75vw;
+      top:10vh;
+    }
+    .site-container{
+      height: 109.1vh;
+    }
+
+    #hr-footer{
+      position: absolute;
+      top: 111vh;
+      width: 100%;
+    }
+    footer{
+
+      top: 110vh;
+    }
+      .pricing-container{
+        left: 20vw;
+        top: 50vh;
+      flex-direction: column;
+    }
+   
+    }
+
+  </style>
+</head>
+
+<body>
+ 
+  <div class="site-container">
+    <header>
+      <img src="./assets/logo.png" alt="logo">
+      <button class="plan-button sign-in">Sign In</button>
+      <hr>
+    </header>
+    <div class="pricing-container">
+      <div class="pricing-plan">
+        <div class="plan-title">Basic</div>
+        <div class="plan-price">$9.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 10 movies a week</li>
+          <li>✅ 1 User</li>
+          <li>✅ 720p</li>
+        </ul>
+        <button class="plan-button">Sign Up</a>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Standard</div>
+        <div class="plan-price">$19.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 50 movies a week</li>
+          <li>✅ 5 Users</li>
+          <li>✅ 1080p</li>
+        </ul>
+        <button class="plan-button">Sign Up</a>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Premium</div>
+        <div class="plan-price">$49.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 100 movies a week</li>
+          <li>✅ 10 Users</li>
+          <li>✅ 4K+HDR</li>
+        </ul>
+        <button class="plan-button">Sign Up</a>
+      </div>
+    </div>
+    <hr id="hr-footer">
+  <footer>
+    <p>
+     
+      a demo site only.
+    </p>
+  </footer>
+     </div>
+ 
+</body>
+
+</html>

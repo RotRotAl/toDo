@@ -1,0 +1,32 @@
+import express from "express";
+
+const app=express();
+app.get("/",(req,res)=>
+{
+    //console.log(req.rawHeaders+"\n");
+    res.send("<h1 style='color:blue;'>hello server!</h1>");
+    
+});
+
+
+
+  app.post("/register", (req, res) => {
+    //Do something with the data
+    res.sendStatus(201);
+  });
+  
+  app.put("/user/angela", (req, res) => {
+    res.sendStatus(200);
+  });
+  
+  app.patch("/user/angela", (req, res) => {
+    res.sendStatus(200);
+  });
+  
+  app.delete("/user/angela", (req, res) => {
+    //Deleting
+    res.sendStatus(200);
+  });
+  
+  
+app.listen(3000,()=>{console.log("server runnig on 3000");});

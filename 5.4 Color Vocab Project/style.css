@@ -1,0 +1,22 @@
+#red{
+    color: rgb(253, 17, 17);
+}
+#blue{
+    color: rgb(17, 174, 253);
+}
+#orange{
+    color: rgb(253, 131, 17);
+}
+#green{
+    color: rgb(2, 93, 5);
+}
+#yellow{
+    color: rgb(255, 251, 0);
+}
+.color-title{
+    font-weight: normal;
+}
+img{
+    height: 200px;
+    width: 200px;
+}

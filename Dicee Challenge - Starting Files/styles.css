@@ -1,0 +1,38 @@
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  background-color: #fdf1b1;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+
+}
+body{
+  background-color: #fdf1b1 !important;
+}
+
+h1 {
+  margin: 30px;
+  font-family: 'VT323', monospace;
+  background-color: #fde9b1;
+  color: #4ECCA3;
+}
+
+p {
+  color: #4ECCA3;
+  font-family: 'VT323', monospace;
+}
+
+img {
+  width: 80%;
+}
+
+footer {
+  margin-top: 5%;
+  background-color: #fde9b1;
+  text-align: center;
+  font-family: 'VT323', monospace;
+}

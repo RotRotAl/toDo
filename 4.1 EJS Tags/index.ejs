@@ -1,0 +1,11 @@
+<body>
+   <h1>EJS TAGS</h1>
+    <p> current seconed:<%=data.seconds%></p>
+   
+    <% for(var i=0;i<data.items.length;i++){ %>
+        <li>
+            <%=data.items[i] %>
+        </li>
+    <% } %>
+    <%- include("./views/footer.ejs")%>
+</body>

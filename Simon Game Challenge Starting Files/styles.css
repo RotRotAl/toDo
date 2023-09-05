@@ -1,0 +1,54 @@
+body {
+  text-align: center;
+  background-color: #B2A4FF !important;
+}
+
+#level-title {
+  font-family: 'Lilita One', cursive;
+  font-size: 3rem;
+  margin:  4%;
+  color: #dffdc5;
+}
+
+#start {
+  font-family: 'Lilita One', cursive;
+  margin: 20px;
+  margin-top: 0px;
+  color: #dffdc5;
+  background-color: #4a5d3a;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+}
+.base-btn {
+ 
+  display: inline-block;
+  height: 33vh;
+  border: 10px solid #FFD3A3;
+  border-radius: 20%;
+}
+
+.red {
+  background-color: #FF55BB;
+}
+
+.green {
+  background-color: #98D8AA;
+}
+
+.blue {
+  background-color: #B6EAFA;
+}
+
+.yellow {
+  background-color: #FCFFB2;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
