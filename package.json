@@ -6,9 +6,10 @@
   "type": "module",
   "homepage": "https://rotrotal.github.io/toDo/",
   "scripts": {
+    "build": "webpack --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "predeploy": "npm run build",
-"deploy": "gh-pages -d 5 milestone todolist"
+    "deploy": "gh-pages -d milestone-todolist"
   },
   "author": "",
   "license": "ISC",
@@ -19,5 +20,8 @@
     "gh-pages-deploy": "^0.1.1",
     "global": "^4.4.0",
     "nodemon": "^3.0.1"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
   }
 }
