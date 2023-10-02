@@ -4,12 +4,9 @@
   "description": "My webpack project",
   "main": "index.js",
   "type": "module",
- 
   "scripts": {
-    
     "dev": "",
     "build": "",
-    
     "test": "echo \"Error: no test specified\" && exit 1",
     "predeploy": "npm run build",
     "deploy": "",
@@ -27,6 +24,7 @@
     "nodemon": "^3.0.1"
   },
   "devDependencies": {
-    "@webpack-cli/generators": "^3.0.7"
+    "@webpack-cli/generators": "^3.0.7",
+    "prettier": "3.0.3"
   }
 }

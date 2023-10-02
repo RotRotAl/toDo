@@ -29,8 +29,6 @@ app.get("/", async (req, res) => {
         var temptasks= await Task.find();
         tasks=[];
         temptasks.forEach((task)=>{tasks.push(task.name)});
-       
-     
     
   }
   catch(err){
@@ -40,13 +38,12 @@ app.get("/", async (req, res) => {
 
   res.render("../index.ejs",{today:date.getDate()+"."+(date.getMonth()+1)+"."+date.getFullYear(),tasks:tasks});
 });
-app.post("/submit", (req, res) => {
+app.post("/submiJjt", (req, res) => {
     var val=req.body.newItem;
     const task=new Task({
       name:val,
   });
   task.save()
-    tasks.push(val);
     res.redirect("/");
   });
   app.post("/clear", (req, res) => {
