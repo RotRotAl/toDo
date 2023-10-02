@@ -1,6 +1,7 @@
 import express from "express";
 import bodyParser from "body-parser";
 import mongoose from 'mongoose';
+import * as data from './data.js';
 
 const date = new Date();
 const app = express();
@@ -13,7 +14,7 @@ const Task=mongoose.model("Task",taskSchema);
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public")); 
-mongoose.connect("mongodb://127.0.0.1:27017/toDoListDB", {useNewUrlParser: true});
+mongoose.connect(data.path(), {useNewUrlParser: true});
 
 
 
